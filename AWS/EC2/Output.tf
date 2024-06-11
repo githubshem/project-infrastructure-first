@@ -3,26 +3,26 @@
 # us-east-1
 ####################################################
 
-output "instance_name_1" {
-  value = resource.aws_instance.instance_1
-}
+# output "instance_name_1" {
+#   value = resource.aws_instance.instance_1
+# }
 
 ####################################################
 # key pair
 # us-east-1
 ####################################################
 
-output "fingerprint_1" {
-  value = data.aws_key_pair.pkey_east_1.fingerprint
-}
+# output "fingerprint_1" {
+#   value = data.aws_key_pair.pukey_east_1.fingerprint
+# }
 
-output "name_1" {
-  value = data.aws_key_pair.pkey_east_1.key_name
-}
+# output "name_1" {
+#   value = data.aws_key_pair.pukey_east_1.key_name
+# }
 
-output "id_1" {
-  value = data.aws_key_pair.pkey_east_1.id
-}
+# output "id_1" {
+#   value = data.aws_key_pair.pukey_east_1.id
+# }
 
 ####################################################
 # EC2 Instance
@@ -39,15 +39,15 @@ output "id_1" {
 ####################################################
 
 /* output "fingerprint_2" {
-  value = data.aws_key_pair.pkey_east_2.fingerprint
+  value = data.aws_key_pair.pukey_east_2.fingerprint
 }
 
 output "name_2" {
-  value = data.aws_key_pair.pkey_east_2.key_name
+  value = data.aws_key_pair.pukey_east_2.key_name
 }
 
 output "id_2" {
-  value = data.aws_key_pair.pkey_east_2.id
+  value = data.aws_key_pair.pukey_east_2.id
 } */
 
 ####################################################
@@ -55,6 +55,6 @@ output "id_2" {
 # 
 ####################################################
 
-output "security_group_id" {
-  value = resource.aws_security_group.sg_1.id
-}
+# output "security_group_id" {
+#   value = resource.aws_security_group.sg_1.id
+# }

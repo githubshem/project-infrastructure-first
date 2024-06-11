@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "5.51.0"
-    }
-  }
-}
-
 ################################################################################
 # AWS
 # Region: us-east 1

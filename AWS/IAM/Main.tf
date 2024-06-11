@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "5.51.0"
-    }
-  }
-}
-
 ####################################################
 # AWS
 # Region: us-east 1
@@ -40,7 +31,7 @@ resource "aws_iam_user" "user_1" {
   path = "/system/"
 }
 
-/* resource "aws_iam_access_key" "lb" {
+resource "aws_iam_access_key" "lb" {
   user = aws_iam_user.lb.name
 }
 
@@ -56,7 +47,7 @@ resource "aws_iam_user_policy" "lb_ro" {
   name   = "test"
   user   = aws_iam_user.lb.name
   policy = data.aws_iam_policy_document.lb_ro.json
-} */
+}
 
 ####################################################
 # Roles
